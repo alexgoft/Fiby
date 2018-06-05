@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+        android:background="@drawable/gradient_3">
+
+
+        <LinearLayout
+            android:id="@+id/order_item"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                        <com.android.fiby.TitleFont
+
+                            android:id="@+id/order_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginRight="15dp"
+                            android:text="test"
+                            android:textColor="#5e240a"
+
+                            android:textSize="25sp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end|center"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="end">
+
+                                <com.android.fiby.TitleFont
+                                    android:id="@+id/total_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="5dp"
+                                    android:layoutDirection="rtl"
+                                    android:text="test"
+
+                                    android:textColor="#5e240a"
+                                    android:textSize="15sp" />
+
+                                <com.android.fiby.TitleFont
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|end"
+                                    android:layout_marginRight="3dp"
+                                    android:gravity="end"
+                                    android:layoutDirection="rtl"
+                                    android:text="₪"
+                                    android:textColor="#5e240a"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/open"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="5dp"
+                                    android:src="@drawable/back" />
+
+                        </LinearLayout>
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:background="@drawable/gradient_4"-->
+                <!--android:id="@+id/drop_menu"-->
+                <!--android:visibility="invisible">-->
+
+        </LinearLayout>
+
+</LinearLayout>

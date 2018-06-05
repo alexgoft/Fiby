@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_1" android:weightSum="1">
+
+    <ImageView android:layout_width="327dp" android:layout_height="298dp"
+               android:src="@drawable/logo"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#E6E6E6"
+
+        android:hint="דואר אלקטרוני"
+        android:id="@+id/etLoginEmail"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#E6E6E6"
+        android:inputType="textPassword"
+        android:hint="סיסמא"
+        android:id="@+id/etLoginPassword"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:gravity="start"/>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="30dp"
+                  android:layout_marginStart="30dp"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btLogIn"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="התחבר"
+            android:background="#F2F2F2"
+            android:textColor="#A6A6A6"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <com.android.fiby.TitleFont
+            android:id="@+id/btLogInSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:text="אינך רשום? לחץ כאן כדי להרשם!"
+            android:textSize="15sp"
+            android:textDirection="rtl"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

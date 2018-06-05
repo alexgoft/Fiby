@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.android.fiby.fragments.MenuFragment">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent">
+
+
+        <GridView android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:id="@+id/double_list"
+            android:numColumns="3"
+            android:layoutDirection="rtl"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#DEDEDE">
+
+
+    <LinearLayout
+        android:id="@+id/order_d"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.android.fiby.TitleFont
+
+                android:id="@+id/history_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginRight="15dp"
+                android:text="סלט"
+                android:textColor="#4F4F4F"
+
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center"
+                android:layout_marginLeft="10dp"
+                android:gravity="end">
+
+                <com.android.fiby.TitleFont
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layoutDirection="rtl"
+                    android:text="test"
+
+                    android:textColor="#4F4F4F"
+                    android:textSize="13sp" />
+
+                <com.android.fiby.TitleFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginRight="3dp"
+                    android:gravity="end"
+                    android:layoutDirection="rtl"
+                    android:text="₪"
+                    android:textColor="#4F4F4F"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.android.fiby.TitleFont android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+
+            android:layoutDirection="rtl"
+            android:textColor="#6E6A6A"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:textDirection="rtl"
+            android:text="חסה, עגבניה, מלפפון, גזר, תירס, טונה"
+            android:id="@+id/details"/>
+
+
+    </LinearLayout>
+</LinearLayout>

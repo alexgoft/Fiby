@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <com.android.fiby.TitleFont
+        android:textColor="#5e240a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:text="בדיקה"
+        android:id="@+id/list_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:layout_below="@+id/list_title"
+
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/buy_now"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/buy_now"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/button"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+    <LinearLayout
+        android:id="@+id/buy_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|left"
+        android:layoutDirection="rtl"
+        android:paddingLeft="32dp"
+
+        android:orientation="horizontal"
+        android:textDirection="rtl">
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="2dp"
+            android:textSize="25sp"
+            android:textColor="#F7E6E6"
+            android:text="123"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="17dp"
+            android:textSize="25sp"
+            android:textColor="#F7E6E6"
+            android:text="₪"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

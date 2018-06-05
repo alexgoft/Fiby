@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbarAlwaysDrawHorizontalTrack="false">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/gradient_1"
+                android:gravity="center">
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="vertical" android:weightSum="1">
+
+
+        <com.android.fiby.TitleFont
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="הרכבת מוצר"
+            android:id="@+id/complex_title"
+            android:textColor="#5e240a"
+            android:textSize="40dp"/>
+
+
+        <com.android.fiby.TitleFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="13dp"
+            android:id="@+id/choose_bread"
+            android:layoutDirection="rtl"
+            android:text="בחירת לחם:"
+            android:textColor="#5e240a"
+            android:textSize="25dp"/>
+
+        <GridView android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/types_of_bread"
+            android:numColumns="3"
+            android:layoutDirection="rtl"/>
+
+        <com.android.fiby.TitleFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layoutDirection="rtl"
+            android:text="תוספות:"
+            android:textColor="#5e240a"
+            android:textSize="25dp"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <ImageButton android:id="@+id/aubergine" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_aubergine"/>
+                <ImageButton android:id="@+id/avocado" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_avocado"/>
+                <ImageButton android:id="@+id/broccoli" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_broccoli"/>
+                <ImageButton android:id="@+id/cabbag" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_cabbag"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <ImageButton android:id="@+id/carrot" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_carrot"/>
+                <ImageButton android:id="@+id/cheese" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_cheese"/>
+                <ImageButton android:id="@+id/chili" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_chili"/>
+                <ImageButton android:id="@+id/corn" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_corn"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <ImageButton android:id="@+id/eggs" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_eggs"/>
+                <ImageButton android:id="@+id/cucumber" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_cucumber"/>
+                <ImageButton android:id="@+id/fish" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_fish"/>
+                <ImageButton android:id="@+id/mushrooms" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_mushrooms"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <ImageButton android:id="@+id/onion" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_onion"/>
+                <ImageButton android:id="@+id/peas" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_peas"/>
+                <ImageButton android:id="@+id/pepper" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_pepper"/>
+                <ImageButton android:id="@+id/tomato" android:layout_width="70dp"
+                             android:layout_height="70dp" android:src="@mipmap/ic_tomato"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.android.fiby.TitleFont
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layoutDirection="rtl"
+            android:text="מיוחדים:"
+            android:textColor="#5e240a"
+            android:textSize="25dp"/>
+
+        <include layout="@layout/triple_grid_fragment"
+                 android:layout_width="match_parent"
+                 android:layout_height="180dp"/>
+
+        <com.android.fiby.TitleFont
+            android:textColor="#5e240a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="הערות למטבח:"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="#f7f7f7"/>
+
+        <Button
+            android:id="@+id/create_order"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="הוספה לסל"
+            android:background="#F2F2F2"
+            android:textColor="#A6A6A6"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="right"
+              android:layoutDirection="rtl">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/gradient_3"
+                      android:orientation="horizontal">
+
+
+                <!--<ImageView android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:src="@mipmap/ic_launcher"/>-->
+
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="5dp"
+
+                              android:layout_marginTop="8dp"
+                              android:layoutDirection="rtl"
+                              android:orientation="vertical">
+
+                        <LinearLayout android:layout_width="fill_parent"
+                                      android:layout_height="match_parent">
+
+                                <com.android.fiby.TitleFont
+
+                                    android:id="@+id/item_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:text="test"
+                                    android:textColor="#5e240a"
+                                    android:layout_marginRight="15dp"
+
+                                    android:textSize="25sp"/>
+
+                                <LinearLayout android:layout_width="fill_parent"
+                                              android:layout_height="match_parent"
+                                              android:layout_gravity="end|center"
+                                              android:layout_marginLeft="15dp"
+                                              android:gravity="end">
+
+                                        <com.android.fiby.TitleFont
+                                            android:id="@+id/item_price"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="5dp"
+                                            android:layoutDirection="rtl"
+                                            android:text="test"
+
+                                            android:textColor="#5e240a"
+                                            android:textSize="15sp"/>
+
+                                        <com.android.fiby.TitleFont
+                                            android:id="@+id/textView2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|end"
+                                            android:layout_marginRight="3dp"
+                                            android:gravity="end"
+                                            android:layoutDirection="rtl"
+                                            android:text="₪"
+                                            android:textColor="#5e240a"
+                                            android:textSize="15sp"/>
+
+                                </LinearLayout>
+                        </LinearLayout>
+                        <com.android.fiby.TitleFont android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginRight="15dp"
+                                  android:layoutDirection="rtl"
+                                  android:textColor="#6E6A6A"
+                                  android:textSize="20dp"
+                                  android:layout_marginLeft="15dp"
+                                  android:layout_marginBottom="5dp"
+                                  android:textDirection="rtl"
+
+                                  android:id="@+id/details"/>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginLeft="15dp"
+                                      android:layout_marginRight="15dp"
+                                      android:gravity="left">
+
+
+                                <ImageView android:id="@+id/plus"
+                                           android:layout_width="25dp"
+                                           android:layout_height="25dp"
+                                           android:layout_marginLeft="15dp"
+                                           android:src="@drawable/plus"/>
+
+                                <ImageView
+                                    android:id="@+id/like"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/like_not_pushed"/>
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

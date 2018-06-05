@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.fiby.activities.RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_1">
+
+    <com.android.fiby.TitleFont
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5e240a"
+        android:id="@+id/title"
+        android:text="הרשמה"
+        android:textSize="60dp"/>
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#E6E6E6"
+        android:hint="שם פרטי"
+        android:id="@+id/etFirstname"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#E6E6E6"
+        android:hint="שם משפחה"
+        android:id="@+id/etLastname"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#E6E6E6"
+        android:hint="דואר אלקטרוני"
+        android:id="@+id/etEmail"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#E6E6E6"
+        android:hint="סיסמא"
+        android:id="@+id/etPassword"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:gravity="right"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הרשם"
+        android:id="@+id/btSignUp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:background="#F2F2F2"
+        android:gravity="center"
+        android:textColor="#A6A6A6"
+        android:textSize="20sp"
+    />
+
+
+</LinearLayout>
